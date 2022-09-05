@@ -1,0 +1,2 @@
+class TestNishta:
+    pass
