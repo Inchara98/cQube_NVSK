@@ -1,4 +1,4 @@
-from selenium.webdriver.support.select import Select
+from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
@@ -27,14 +27,14 @@ class Base:
 
     """Function that returns the status of the web element"""
     def is_enabled(self, locator):
-        # Checks whether the web element is enabled
+        """ Checks whether the web element is enabled """
         element = WebDriverWait(self.driver, self.default_explicit_wait).until(
             EC.visibility_of_element_located(locator))
         return element
 
     """ Function that returns the title of the web element"""
     def get_title(self, title):
-        # Gets the title of the web element
+        """ Gets the title of the web element """
         WebDriverWait(self.driver, self.default_explicit_wait).until(EC.title_is(title))
         return self.driver.title
 
@@ -55,10 +55,12 @@ class Base:
         return elements
 
     """ Function that returns the web elements attribute"""
-    def get_attribute_value(self, attribute_name , locator):
+    def get_attribute_value(self, attribute_name, locator):
         element = WebDriverWait(self.driver, self.default_explicit_wait).until(
             EC.presence_of_element_located(locator)).get_attribute(attribute_name)
         return element
 
-
-
+    """ Function that returns the tab clicked result """
+    def get_tab_result(self, attribute_name, locator):
+        result = self.driver.find_element(By.XPATH, locator).get_attribute(attribute_name)
+        return result
