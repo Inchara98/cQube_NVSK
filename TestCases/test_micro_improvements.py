@@ -1,7 +1,7 @@
 import logging
 import time
 
-from PageObjects.Cqube_UI.micro_improvements import MicroImprovements
+from PageObjects.CqubeUI.micro_improvements import MicroImprovements
 from TestCases.conftest import ConfTest
 from Utilities import CustomLogger
 from Utilities.ReadProperties import ReadConfig

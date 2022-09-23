@@ -5,7 +5,7 @@ from selenium.common import NoSuchElementException
 from selenium.webdriver import ActionChains
 from selenium.webdriver.common.by import By
 
-from PageObjects.Cqube_UI.nas import Nas
+from PageObjects.CqubeUI.nas import Nas
 from TestCases.conftest import ConfTest
 from Utilities import CustomLogger
 from Utilities.ReadProperties import ReadConfig

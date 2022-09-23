@@ -2,7 +2,7 @@ import logging
 
 import time
 
-from PageObjects.Cqube_UI.ncf import Ncf
+from PageObjects.CqubeUI.ncf import Ncf
 from TestCases.conftest import ConfTest
 from Utilities import CustomLogger
 from Utilities.ReadProperties import ReadConfig

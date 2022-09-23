@@ -1,7 +1,7 @@
 import logging
 import time
 
-from PageObjects.Cqube_UI.ncert_quiz import NcertQuiz
+from PageObjects.CqubeUI.ncert_quiz import NcertQuiz
 from TestCases.conftest import ConfTest
 from Utilities import CustomLogger
 from Utilities.ReadProperties import ReadConfig
