@@ -8,7 +8,7 @@ from PageObjects.Cqube_UI.BasePage import Base
 from Utilities.ReadProperties import ReadConfig
 
 
-class NCF(Base):
+class Ncf(Base):
     """Locators for dashboard and ncf program"""
 
     dashboard_button = (By.ID, 'menu-item-0')

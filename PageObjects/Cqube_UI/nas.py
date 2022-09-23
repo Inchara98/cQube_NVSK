@@ -8,7 +8,7 @@ from PageObjects.Cqube_UI.BasePage import Base
 from Utilities.ReadProperties import ReadConfig
 
 
-class nas(Base):
+class Nas(Base):
     """Locators for dashboard and micro_improvements"""
 
     dashboard_button = (By.ID, 'menu-item-0')

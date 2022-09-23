@@ -8,7 +8,7 @@ from PageObjects.Cqube_UI.BasePage import Base
 from Utilities.ReadProperties import ReadConfig
 
 
-class ncert_quiz(Base):
+class NcertQuiz(Base):
     """Locators for dashboard and ncert_quiz"""
 
     dashboard_button = (By.ID, 'menu-item-0')
