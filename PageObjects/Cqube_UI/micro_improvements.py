@@ -8,7 +8,7 @@ from PageObjects.Cqube_UI.BasePage import Base
 from Utilities.ReadProperties import ReadConfig
 
 
-class micro_improvements(Base):
+class MicroImprovements(Base):
 
     """Locators for dashboard and micro_improvements"""
 
